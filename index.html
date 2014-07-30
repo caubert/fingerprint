@@ -1,0 +1,21 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas fingerprint Checker</title>
+  <script src="./js/fingerprint-0.5.4.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      var text = "My Canvas fingerprint is " + (new Fingerprint({canvas: true}).get());
+      $('#cfp_placeholder').text(text);
+    });
+  </script>
+</head>
+<body>
+  <h1>Canvas fingerprint Checker</h1>
+  <p id="cfp_placeholder"></p>
+  <div>
+  </div>
+</body>
+</html>
+
