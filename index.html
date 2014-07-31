@@ -46,6 +46,15 @@
   ga('create', 'UA-53384033-1', 'auto');
   ga('send', 'pageview');
   
+  
+  _gaq.push(['_setCustomVar',
+      1,                   // This custom var is set to slot #1.  Required parameter.
+      'Canvas Fingerprint',           // The top-level name for your online content categories.  Required parameter.
+      document.getElementById('fp2'),  // Sets the value of "Section" to "Life & Style" for this particular aricle.  Required parameter.
+      3                    // Sets the scope to page-level.  Optional parameter.
+   ]);
+
+  
 </script>
 
 </body>
